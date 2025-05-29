@@ -98,23 +98,28 @@ const StoreForm = () => {
         <p className="text-gray-600">
           Add your basic store information and complete the setup
         </p>
-
+        <hr className="opacity-50 -mt-4"/>
         {/* Store Name */}
-        <div>
-          <label className="block text-sm font-medium text-gray-700">
+        <div className="">
+          <div>
+            <label className="block text-md font-medium text-gray-700">
             Give your online store a name
           </label>
-          <input
+          <p className="opacity-50 text-sm">A great store name is a big part of your success. Make sure it aligns with your brand and products</p>
+          </div>
+          <div>
+            <input
             type="text"
             value={storeName}
             onChange={(e) => setStoreName(e.target.value)}
-            className={`mt-1 w-full px-4 py-2 border rounded-md focus:outline-none ${
+            className={`mt-1 w-full px-4 py-2 border rounded-md focus:outline-1 ${
               submitted && !isStoreNameValid
                 ? "border-red-500"
                 : "border-gray-300"
             }`}
             placeholder="e.g. QuickMart"
           />
+          </div>
           {submitted && !isStoreNameValid && (
             <p className="text-red-500 text-sm mt-1">
               Store name must be at least 3 characters long
@@ -124,22 +129,23 @@ const StoreForm = () => {
 
         {/* Domain */}
         <div>
-          <label className="block text-sm font-medium text-gray-700">
+          <label className="block text-md  font-medium text-gray-700">
             Your online store subdomain
           </label>
+          <p className="opacity-50 text-sm">A SEO-friendly store name is a crucial part of your success. Make sure it aligns with your brand and products.</p>
           <div className="flex items-center mt-1">
             <input
               type="text"
               value={domain}
               onChange={(e) => setDomain(e.target.value)}
-              className={`w-full px-4 py-2 border rounded-l-md focus:outline-none ${
+              className={`w-full px-4 py-2 border rounded-l-md focus:outline-1 ${
                 submitted && !isDomainValid
                   ? "border-red-500"
                   : "border-gray-300"
               }`}
               placeholder="yourstore"
             />
-            <span className="px-3 py-2 bg-gray-100 border border-l-0 border-gray-300 rounded-r-md text-gray-600 text-sm">
+            <span className="px-2 py-3 bg-gray-100 border border-l-0 border-gray-300 rounded-r-md text-gray-600 text-sm">
               .expressitbd.com
             </span>
           </div>
@@ -157,9 +163,10 @@ const StoreForm = () => {
 
         {/* Location */}
         <div>
-          <label className="block text-sm font-medium text-gray-700">
+          <label className="block text-md  font-medium text-gray-700">
             Where's your store located?
           </label>
+          <p className="opacity-50 text-sm">Set your store's default location so we can optimize store access and speed for your customers.</p>
           <select
             value={location}
             onChange={(e) => setLocation(e.target.value)}
@@ -173,9 +180,10 @@ const StoreForm = () => {
 
         {/* Category */}
         <div>
-          <label className="block text-sm font-medium text-gray-700">
+          <label className="block text-md  font-medium text-gray-700">
             What's your Category?
           </label>
+          <p className="opacity-50 text-sm">Set your store's default category so that we can optimize store access and speed for your customers</p>
           <select
             value={category}
             onChange={(e) => setCategory(e.target.value)}
@@ -189,9 +197,10 @@ const StoreForm = () => {
 
         {/* Currency */}
         <div>
-          <label className="block text-sm font-medium text-gray-700">
+          <label className="block text-md  font-medium text-gray-700">
             Choose store currency
           </label>
+          <p className="opacity-50 text-sm">This is the main currency you wish to sell in</p>
           <select
             value={currency}
             onChange={(e) => setCurrency(e.target.value)}
@@ -205,14 +214,15 @@ const StoreForm = () => {
 
         {/* Email */}
         <div>
-          <label className="block text-sm font-medium text-gray-700">
+          <label className="block text-md  font-medium text-gray-700">
             Store contact email
           </label>
+          <p className="opacity-50 text-sm">This is the email you'll use to send notifications to and receive orders from customers</p>
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className={`mt-1 w-full px-4 py-2 border rounded-md focus:outline-none ${
+            className={`mt-1 w-full px-4 py-2 border rounded-md focus:outline-1 ${
               submitted && !isEmailValid ? "border-red-500" : "border-gray-300"
             }`}
             placeholder="yourstore@email.com"
