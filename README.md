@@ -1,12 +1,45 @@
-# React + Vite
+# 🛒 Glore BD – E-commerce Product Showcase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **Glore BD**, an elegant e-commerce product showcase web app built with **React**, **Tailwind CSS (daisyUI)**, and a **Node.js + MongoDB** backend. This app demonstrates fetching product data (including images and videos), displaying detailed views, and simulating a purchase experience using SweetAlert.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔍 Browse products with image thumbnails
+- 🎥 Watch product demo videos
+- 📝 View detailed product descriptions
+- 💳 Simulated "Buy Now" with confirmation alert
+- 🔐 Protected routing with graceful fallbacks
+- 🎨 Beautiful UI using **Tailwind CSS** and **daisyUI**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧑‍💻 Tech Stack
+
+| Frontend        | Backend        | Others              |
+|-----------------|----------------|----------------------|
+| React 19        | Node.js        | SweetAlert2 for alerts |
+| React Router    | Express.js     | Cloudinary (Media Hosting) |
+| Tailwind CSS    | MongoDB        | Vite for fast bundling |
+| DaisyUI         | RESTful API    | Hero section layout  |
+
+---
+
+## 📸 Screenshots
+
+### 🖼 Product List
+Browse all available products with thumbnails and names.
+
+### 📽 Product Details
+View a product with its:
+- Name
+- Description
+- Video preview
+- Price
+- Buy Now button
+
+---
+
+## 📁 Folder Structure
+
